@@ -1,0 +1,4 @@
+\section{Conclusion}
+This article summarizes the reasons that lead to difficulties in exploring sparse/deceptive tasks as "zero rewards" and "action penalty" and indicates how these factors affect reinforcement learning algorithms. We propose the LiFE method: use the input of the last fully connected layer of the neural network as the feature representation to calculate the feature matrix for measuring uncertainty, and calculate the UCB bonus for exploration. 
+
+We designed a low-dimensional continuous action task "swim" to measure the exploration ability of the proposed method. Experimental results show that our method has the ability to explore deeply under different task configurations. We finally tested the modified version of the Gym task using SAC and TD3 as baseline algorithms, and the results show that our method can solve continuous control tasks under sparse/deceptive rewards.
